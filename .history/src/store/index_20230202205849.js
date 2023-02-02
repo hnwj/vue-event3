@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import createPersistedState from 'vuex-persistedstate'
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -11,13 +11,13 @@ export default new Vuex.Store({
   getters: {
   },
   mutations: {
-    updateToken (state, newToken) {
+    updateToken (token, newToken) {
+      // eslint-disable-next-line no-undef
       state.token = newToken
     }
   },
   actions: {
   },
   modules: {
-  },
-  plugins: [createPersistedState()]
+  }
 })

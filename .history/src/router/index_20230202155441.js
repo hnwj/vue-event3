@@ -10,10 +10,6 @@ const routes = [
   {
     path: '/reg',
     component: () => import('@/views/register')
-  },
-  {
-    path: '/',
-    component: () => import('@/views/layout')
   }
 ]
 

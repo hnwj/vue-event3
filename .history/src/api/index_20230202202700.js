@@ -9,7 +9,7 @@ export const getListAPI = () => {
 // 用户注册接口
 export const registerAPI = ({ username, password, repassword }) => {
   return request({
-    url: '/api/reg',
+    url: 'http://geek.itheima.net/v1_0/api/reg',
     method: 'POST',
     data: {
       username,
@@ -22,7 +22,7 @@ export const registerAPI = ({ username, password, repassword }) => {
 // 用户登录接口
 export const loginAPI = ({ username, password }) => {
   return request({
-    url: '/api/login',
+    url: 'http://geek.itheima.net/v1_0/api/login',
     method: 'POST',
     data: {
       username,

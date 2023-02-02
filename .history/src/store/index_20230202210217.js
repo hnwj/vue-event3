@@ -11,7 +11,8 @@ export default new Vuex.Store({
   getters: {
   },
   mutations: {
-    updateToken (state, newToken) {
+    updateToken (token, newToken) {
+      // eslint-disable-next-line no-undef
       state.token = newToken
     }
   },

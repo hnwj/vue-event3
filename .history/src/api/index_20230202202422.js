@@ -9,24 +9,13 @@ export const getListAPI = () => {
 // 用户注册接口
 export const registerAPI = ({ username, password, repassword }) => {
   return request({
-    url: '/api/reg',
-    method: 'POST',
-    data: {
-      username,
-      password,
-      repassword
-    }
+    url: 'http://geek.itheima.net/v1_0/api/reg'
   })
 }
 
 // 用户登录接口
 export const loginAPI = ({ username, password }) => {
   return request({
-    url: '/api/login',
-    method: 'POST',
-    data: {
-      username,
-      password
-    }
+    url: 'http://geek.itheima.net/v1_0/api/login'
   })
 }
